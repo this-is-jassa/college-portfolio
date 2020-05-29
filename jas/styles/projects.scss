@@ -1,23 +1,57 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
 #projectss {
     font-family: "Raleway", sans-serif;
-    padding: 80px 0 30px 0;
+    padding: 10px 0 30px 0;
 
     .bgvideo {
         width: 100%;
+        // height: 100%;
         margin: 0;
-        border-radius: 100px;
     }
 
-    .nav {
-        .nav-link {
-            color: black;
-            font-weight: 400;
-            font-size: 13px;
-            letter-spacing: 1px;
+    #ttt {
+        background-image: url(../assets/images/tic-tac-toe-1954446_640.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        animation: animatedBackground 1.2s ease-in-out alternate infinite;
+    }
+
+    .dark-filter {
+        position: absolute;
+        background-color: black;
+        opacity: 0.5;
+        width: 100%;
+        top: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .content-card {
+        margin-top: 50px;
+        position: relative;
+        color: white;
+        background-color: black;
+        height: 550px;
+        border-radius: 8px;
+        font-family: "Karla", sans-serif;
+        text-align: center;
+
+        h1 {
+            font-weight: bolder;
+            font-size: 60px;
         }
-        .active {
-            color: white;
+        hr {
+            width: 50px;
+            background-color: white;
+            height: 6px;
+            border-radius: 30px;
+            margin-top: 50px;
+        }
+        p {
+            font-size: 18px;
+            padding: 25px 30px 0 30px;
+            letter-spacing: 1px;
         }
     }
 
@@ -56,7 +90,6 @@
             border: 2px solid #5654c8;
             transition: 0.4s;
             background-color: #5654c8;
-            
 
             &:hover {
                 background-color: black;
@@ -70,11 +103,37 @@
             }
         }
     }
+
+    .nav {
+        margin-bottom: 80px;
+        .nav-link {
+            color: black;
+            font-weight: 400;
+            font-size: 13px;
+            letter-spacing: 1px;
+        }
+        .active {
+            color: white;
+        }
+    }
+
+    @keyframes animatedBackground {
+        from {
+            background-size: cover;
+            // background-position: 50% 22%;
+            transform: scale(1.1);
+        }
+        to {
+            background-size: cover;
+            // background-position: 100% 22%;
+            transform: scale(1.2);
+        }
+    }
 }
 
 #teamsms-popup {
     color: white;
-    
+
     .container {
         padding: 50px;
     }
@@ -100,7 +159,6 @@
         letter-spacing: 1px;
         border: 2px solid #5654c8;
         transition: 0.2s;
-        
 
         &:hover {
             background-color: #5654c8;
