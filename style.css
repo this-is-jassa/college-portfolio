@@ -314,12 +314,14 @@ header .footer-wave {
 .listar-feature-icon-inner {
   width: 120px;
   height: 120px;
-  line-height: 120px;
+  line-height: 100px;
+  padding: -1rem;
   border-radius: 500px;
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.14);
+  border:1px solid rgb(230, 230, 230);
+  /* box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.14); */
   background: #fff;
 }
 
@@ -332,24 +334,33 @@ header .footer-wave {
   display: inline-block;
   position: relative;
   width: 120px;
-  height: 120px;
+  height: 125px;
   line-height: 120px;
   text-align: left;
 }
 
-.listar-feature-icon-inner img {
+.listar-feature-icon-inner div img {
+
+  width:120px;
+  height:120px;
   position: relative;
-  margin: 0 auto;
-  vertical-align: middle;
+  margin: -2rem auto;
+  margin-bottom:-1.5rem;
+  /* vertical-align: middle; */
   display: inline-block;
-  width: auto;
+  /* width: auto; */
+  border-radius: 50%;;
   left: 50%;
   -webkit-transform: translate(-50%);
   -moz-transform: translate(-50%);
   -ms-transform: translate(-50%);
   -o-transform: translate(-50%);
   transform: translate(-50%);
-  height: 55px;
+  /* height: 55px; */
+}
+
+.kiran{
+  width:220px;
 }
 
 .listar-feature-item img,
