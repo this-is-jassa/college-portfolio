@@ -17,6 +17,7 @@ body {
   border: 2px solid black;
   border-radius: 13px;
   z-index: 1;
+  pointer-events: none;
 }
 
 .avatar {
